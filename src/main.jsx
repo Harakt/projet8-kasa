@@ -5,6 +5,7 @@ import Accueil from './pages/Accueil/accueil'
 import Propos from './pages/Propos'
 import Header from './components/Header/header'
 import Fiche from './pages/Fiche/fiche'
+import Error from './components/Error/error'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -14,6 +15,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/" element={<Accueil />} />
         <Route path="/propos" element={<Propos />} />
         <Route path="/fiche" element={<Fiche />} />
+        <Route path="*" element={<Error />} />
       </Routes>
     </Router>
   </React.StrictMode>,
