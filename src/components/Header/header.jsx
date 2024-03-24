@@ -1,15 +1,9 @@
 import { Link } from 'react-router-dom'
-import styled from 'styled-components'
-
-const NavContainer = styled.nav`
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-`
+import './header.scss'
 
 function Header() {
   return (
-    <NavContainer>
+    <nav className="navContainer">
       <Link to="/">
         <img src="./src/assets/LOGO.svg" alt="" />
       </Link>
@@ -17,7 +11,7 @@ function Header() {
         <Link to="/">Accueil</Link>
         <Link to="/propos">A Propos</Link>
       </div>
-    </NavContainer>
+    </nav>
   )
 }
 

@@ -6,6 +6,8 @@ import Propos from './pages/Propos'
 import Header from './components/Header/header'
 import Fiche from './pages/Fiche/fiche'
 import Error from './components/Error/error'
+import Footer from './components/Footer/footer'
+import './utils/style/globalStyle.scss'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
@@ -17,6 +19,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
         <Route path="/fiche" element={<Fiche />} />
         <Route path="*" element={<Error />} />
       </Routes>
+      <Footer />
     </Router>
   </React.StrictMode>,
 )

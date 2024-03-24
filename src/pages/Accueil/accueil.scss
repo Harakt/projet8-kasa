@@ -1,0 +1,11 @@
+.cardContainer {
+  max-width: 1240px;
+  padding: 50px;
+  margin: auto;
+  background-color: #f6f6f6;
+  display: grid;
+  justify-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 50px 60px;
+}
