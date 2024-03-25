@@ -1,6 +1,7 @@
 .cardWrapper {
   height: 340px;
   width: 340px;
+  text-decoration: none;
 }
 
 .cardImage {
@@ -15,4 +16,8 @@
   color: white;
   font-size: 18px;
   font-weight: bold;
+}
+
+.cardLink {
+  text-decoration: none;
 }

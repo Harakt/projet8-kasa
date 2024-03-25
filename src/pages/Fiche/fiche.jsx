@@ -1,7 +1,15 @@
+import { useParams } from 'react-router-dom'
+import logements from '../../assets/data/logements'
+
 function Fiche() {
+  const { id } = useParams()
+  const logementList = logements
+  const selectedLogement = logementList.find((section) => section.id === id)
+
   return (
     <div>
-      <h1> Fiche Kasa</h1>
+      <img src={selectedLogement.cover} alt="" />
+      <span>{selectedLogement.title} </span>
     </div>
   )
 }
