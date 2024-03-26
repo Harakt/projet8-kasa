@@ -1,3 +1,9 @@
+.dropdownContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .dropdownButton {
   height: 50px;
   width: 1000px;

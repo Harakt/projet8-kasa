@@ -9,7 +9,7 @@ function Dropdown({ title, text }) {
   }
 
   return (
-    <div>
+    <div className="dropdownContainer">
       <div className="dropdownButton" onClick={handleClick}>
         {title}
       </div>
