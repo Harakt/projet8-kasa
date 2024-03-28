@@ -2,18 +2,33 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 .dropdownButton {
+  display: flex;
+  align-items: center;
   height: 50px;
-  background-color: #ff6060;
   width: 100%;
+  background-color: #ff6060;
+  border-radius: 5px;
+}
+
+.dropdownButtonText {
+  padding-left: 15px;
+  font-size: 24px;
+  font-weight: bold;
   color: white;
 }
 
-.dropdownText {
+.dropdownContent {
+  padding: 15px 0px;
   background-color: #f6f6f6;
   height: 50px;
   width: 100%;
-  padding: 20px;
+}
+
+.dropdownContentText {
+  padding-left: 25px;
+  font-size: 20px;
 }

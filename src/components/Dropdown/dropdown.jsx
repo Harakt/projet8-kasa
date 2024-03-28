@@ -11,9 +11,13 @@ function Dropdown({ title, text }) {
   return (
     <div className="dropdownContainer">
       <div className="dropdownButton" onClick={handleClick}>
-        {title}
+        <span className="dropdownButtonText">{title}</span>
       </div>
-      {visible && <div className="dropdownText">{text}</div>}
+      {visible && (
+        <div className="dropdownContent">
+          <span className="dropdownContentText">{text}</span>
+        </div>
+      )}
     </div>
   )
 }
