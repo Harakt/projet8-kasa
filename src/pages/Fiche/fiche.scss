@@ -12,6 +12,7 @@
 }
 
 .ficheContent {
+  margin-top: 25px;
   display: flex;
   justify-content: space-between;
 }
@@ -22,9 +23,18 @@
 }
 
 .ficheTitle {
+  font-size: 36px;
+  color: #ff6060;
 }
 
 .ficheLocation {
+  font-size: 18px;
+  color: black;
+}
+
+.ficheHostName {
+  font-size: 18px;
+  color: #ff6060;
 }
 
 .ficheHostPicture {
@@ -39,6 +49,7 @@
 }
 
 .ficheContainerDropdown {
+  margin: 15px 0px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;

@@ -21,11 +21,11 @@ function Fiche() {
       <img className="ficheCover" src={selectedLogement.cover} alt="" />
       <div className="ficheContent">
         <div className="ficheContentTitle">
-          <span>{selectedLogement.title} </span>
-          <span>{selectedLogement.location}</span>
+          <span className="ficheTitle">{selectedLogement.title} </span>
+          <span className="ficheLocation">{selectedLogement.location}</span>
         </div>
         <div>
-          <span>{selectedLogement.host.name}</span>
+          <span className="ficheHostName">{selectedLogement.host.name}</span>
           <img
             className="ficheHostPicture"
             src={selectedLogement.host.picture}
