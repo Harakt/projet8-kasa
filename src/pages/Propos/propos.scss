@@ -4,8 +4,11 @@
   margin-bottom: 40px;
 }
 
-.proposDropdown {
-  margin-top: 20px;
+.proposDropdownContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  gap: 30px;
 }
 
 .proposCover {
