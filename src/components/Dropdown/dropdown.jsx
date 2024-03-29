@@ -5,7 +5,6 @@ function Dropdown({ title, text }) {
   const [visible, setVisible] = useState(false)
   const handleClick = () => {
     setVisible(!visible)
-    console.log(visible)
   }
 
   return (
