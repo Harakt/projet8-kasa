@@ -1,4 +1,33 @@
-.cardContainer {
+.accueilContainer {
+  max-width: 1240px;
+  margin: auto;
+}
+
+.accueilCoverContainer {
+  margin-bottom: 40px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.accueilCoverImage {
+  height: 250px;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 25px;
+  filter: brightness(50%);
+}
+
+.accueilCoverText {
+  position: absolute;
+  top: 35%;
+  left: 22%;
+  font-size: 48px;
+  font-weight: bold;
+  color: white;
+}
+
+.accueilCardContainer {
   max-width: 1240px;
   padding: 50px;
   margin: auto;

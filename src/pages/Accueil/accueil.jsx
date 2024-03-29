@@ -6,15 +6,25 @@ function Accueil() {
   const logementList = logements
 
   return (
-    <div className="cardContainer">
-      {logementList.map((logement) => (
-        <Card
-          key={logement.id}
-          id={logement.id}
-          label={logement.title}
-          picture={logement.cover}
+    <div className="accueilContainer">
+      <div className="accueilCoverContainer">
+        <img
+          className="accueilCoverImage"
+          src="./src/assets/Image source 1.png"
+          alt=""
         />
-      ))}
+        <span className="accueilCoverText">Chez vous, partout et ailleurs</span>
+      </div>
+      <div className="accueilCardContainer">
+        {logementList.map((logement) => (
+          <Card
+            key={logement.id}
+            id={logement.id}
+            label={logement.title}
+            picture={logement.cover}
+          />
+        ))}
+      </div>
     </div>
   )
 }
