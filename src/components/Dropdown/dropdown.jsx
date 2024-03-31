@@ -14,7 +14,7 @@ function Dropdown({ title, text }) {
         onClick={handleClick}
       >
         <span className="dropdownButtonText">{title}</span>
-        <img src="./src/assets/dropdownArrowUp.png" />
+        <img src="/src/assets/dropdownArrowUp.png" />
       </div>
       <div className={`dropdownContentContainer ${visible ? 'slide' : ''}`}>
         <div className="dropdownContent">
