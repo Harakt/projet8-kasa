@@ -1,0 +1,35 @@
+.carouselContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 415px;
+  object-fit: cover;
+}
+
+.carouselPictures {
+  width: 100%;
+}
+
+.carouselButton {
+  position: relative;
+  height: 79px;
+  width: 46px;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+  &.carouselButtonLeft {
+    left: 50px;
+    margin: -25px;
+  }
+  &.carouselButtonRight {
+    rotate: 180deg;
+    right: 50px;
+    margin: -25px;
+  }
+  & > img {
+    height: 79px;
+    width: 46px;
+  }
+}

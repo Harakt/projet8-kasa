@@ -1,0 +1,11 @@
+.carouselPicture {
+  display: none;
+  &.active {
+    display: block;
+  }
+  & > img {
+    height: 415px;
+    width: 100%;
+    object-fit: cover;
+  }
+}
