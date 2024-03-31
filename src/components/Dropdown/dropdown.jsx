@@ -9,14 +9,18 @@ function Dropdown({ title, text }) {
 
   return (
     <div className="dropdownContainer">
-      <div className="dropdownButton" onClick={handleClick}>
+      <div
+        className={`dropdownButton ${visible ? 'rotate' : ''}`}
+        onClick={handleClick}
+      >
         <span className="dropdownButtonText">{title}</span>
+        <img src="./src/assets/dropdownArrowUp.png" />
       </div>
-      {visible && (
+      <div className={`dropdownContentContainer ${visible ? 'slide' : ''}`}>
         <div className="dropdownContent">
           <span className="dropdownContentText">{text}</span>
         </div>
-      )}
+      </div>
     </div>
   )
 }

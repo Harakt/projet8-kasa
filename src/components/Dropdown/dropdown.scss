@@ -7,10 +7,22 @@
 .dropdownButton {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   height: 50px;
   width: 100%;
   background-color: #ff6060;
   border-radius: 5px;
+  & > img {
+    height: 14px;
+    width: 24px;
+    padding-right: 25px;
+    padding-left: 25px;
+    transform: rotate(0deg);
+    transition: transform 0.5s ease;
+  }
+  &.rotate > img {
+    transform: rotate(-180deg);
+  }
 }
 
 .dropdownButtonText {
@@ -20,14 +32,21 @@
   color: white;
 }
 
-.dropdownContent {
-  padding: 15px 0px;
-  background-color: #f6f6f6;
-  height: 50px;
-  width: 100%;
+.dropdownContentContainer {
+  overflow: hidden;
+  & > .dropdownContent {
+    background-color: #f6f6f6;
+    padding: 20px 15px;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: -15%;
+    transition: all 0.5s ease;
+  }
+  &.slide > .dropdownContent {
+    margin-top: 0;
+  }
 }
 
 .dropdownContentText {
-  padding-left: 25px;
   font-size: 20px;
 }
