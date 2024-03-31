@@ -4,6 +4,7 @@ import './fiche.scss'
 import Dropdown from '../../components/Dropdown/dropdown'
 import Tags from '../../components/Tag/tags'
 import Rating from '../../components/Rating/rating'
+import Carousel from '../../components/Carousel/carousel'
 
 function Fiche() {
   const { id } = useParams()
@@ -18,7 +19,7 @@ function Fiche() {
 
   return (
     <div className="ficheContainer">
-      <img className="ficheCover" src={selectedLogement.cover} alt="" />
+      <Carousel pictures={selectedLogement.pictures} />
       <div className="ficheContent">
         <div className="ficheContentTitle">
           <span className="ficheTitle">{selectedLogement.title} </span>
