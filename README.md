@@ -1,8 +1,15 @@
-# React + Vite
+# OpenClassrooms Projet 8
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Créez une application web de location immobilière avec React
 
-Currently, two official plugins are available:
+## Objectif
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Création du front-end d'une application web avec react router.
+
+## Installation
+
+Installation faite avec Vite + React
+
+## Langages et librairies utilisés
+
+HTML / CSS / Sass / Javascript / React / React-router
