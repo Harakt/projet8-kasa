@@ -1,5 +1,5 @@
 .ficheContainer {
-  max-width: 1240px;
+  width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -24,6 +24,13 @@
 .ficheLocation {
   font-size: 18px;
   color: black;
+  font-weight: bold;
+}
+
+.ficheHostContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 
 .ficheHostName {
