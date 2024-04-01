@@ -5,11 +5,19 @@ import Dropdown from '../../components/Dropdown/dropdown'
 import Tags from '../../components/Tag/tags'
 import Rating from '../../components/Rating/rating'
 import Carousel from '../../components/Carousel/carousel'
+import Error from '../../components/Error/error'
 
 function Fiche() {
   const { id } = useParams()
   const logementList = logements
   const selectedLogement = logementList.find((section) => section.id === id)
+  if (selectedLogement == undefined) {
+    return (
+      <div>
+        <Error />
+      </div>
+    )
+  }
   const equipmentsList = selectedLogement.equipments.map(
     (equipments, index) => <li key={`equipments-${index}`}>{equipments}</li>,
   )
@@ -25,7 +33,7 @@ function Fiche() {
           <span className="ficheTitle">{selectedLogement.title} </span>
           <span className="ficheLocation">{selectedLogement.location}</span>
         </div>
-        <div>
+        <div className="ficheHostContainer">
           <span className="ficheHostName">{selectedLogement.host.name}</span>
           <img
             className="ficheHostPicture"
