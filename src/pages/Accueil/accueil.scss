@@ -1,13 +1,10 @@
-.accueilContainer {
-  max-width: 1240px;
-  margin: auto;
-}
-
 .accueilCoverContainer {
-  margin-bottom: 40px;
+  width: 90%;
+  margin: auto;
   position: relative;
-  text-align: center;
-  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .accueilCoverImage {
@@ -20,21 +17,21 @@
 
 .accueilCoverText {
   position: absolute;
-  top: 35%;
-  left: 22%;
   font-size: 48px;
   font-weight: bold;
   color: white;
 }
 
 .accueilCardContainer {
-  max-width: 1240px;
-  padding: 50px;
-  margin: auto;
+  width: 90%;
+  margin: 40px auto;
   background-color: #f6f6f6;
-  display: grid;
-  justify-items: center;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 50px 60px;
+  border-radius: 25px;
+}
+
+.accueilCardList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 40px 30px;
 }

@@ -3,12 +3,16 @@ import './card.scss'
 
 function Card({ id, label, picture }) {
   return (
-    <Link className="cardWrapper" to={`fiche/${id}`}>
-      <div className="cardImageContainer">
-        <img className="cardImage" src={picture} alt="" />
-      </div>
-      <span className="cardLabel">{label}</span>
-    </Link>
+    <li className="cardWrapper">
+      <Link to={`fiche/${id}`}>
+        <figure className="cardImageContainer">
+          <img className="cardImage" src={picture} alt="" />
+          <figcaption className="cardLabelContainer">
+            <span className="cardLabel">{label}</span>
+          </figcaption>
+        </figure>
+      </Link>
+    </li>
   )
 }
 
