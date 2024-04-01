@@ -13,7 +13,7 @@ function Header() {
   return (
     <nav className="headerContainer">
       <Link to="/">
-        <img src="./src/assets/LOGO.svg" alt="" />
+        <img src="/src/assets/KasaLogo.svg" alt="" />
       </Link>
       <div className="headerLinkContainer">
         <Link className={path === '/' ? 'selectedLink' : 'headerLink'} to="/">
