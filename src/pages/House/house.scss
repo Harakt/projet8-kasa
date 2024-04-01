@@ -1,55 +1,55 @@
-.ficheContainer {
+.houseContainer {
   width: 90%;
   margin: auto;
   display: flex;
   flex-direction: column;
 }
 
-.ficheContent {
+.houseContent {
   margin-top: 25px;
   display: flex;
   justify-content: space-between;
 }
 
-.ficheContentTitle {
+.houseContentTitle {
   display: flex;
   flex-direction: column;
 }
 
-.ficheTitle {
+.houseTitle {
   font-size: 36px;
   color: #ff6060;
 }
 
-.ficheLocation {
+.houseLocation {
   font-size: 18px;
   color: black;
   font-weight: bold;
 }
 
-.ficheHostContainer {
+.houseHostContainer {
   display: flex;
   align-items: center;
   gap: 10px;
 }
 
-.ficheHostName {
+.houseHostName {
   font-size: 18px;
   color: #ff6060;
 }
 
-.ficheHostPicture {
+.houseHostPicture {
   height: 64px;
   width: 64px;
   border-radius: 100%;
 }
 
-.ficheRating {
+.houseRating {
   font-size: 24px;
   color: #ff6060;
 }
 
-.ficheContainerDropdown {
+.houseContainerDropdown {
   margin: 15px 0px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);

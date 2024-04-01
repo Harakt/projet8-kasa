@@ -10,7 +10,7 @@ function Accueil() {
       <div className="accueilCoverContainer">
         <img
           className="accueilCoverImage"
-          src="/src/assets/Image source 1.png"
+          src="../src/assets/cover/cover1.png"
           alt=""
         />
         <span className="accueilCoverText">Chez vous, partout et ailleurs</span>

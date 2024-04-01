@@ -1,10 +1,10 @@
-.dropdownContainer {
+.collapseContainer {
   display: flex;
   align-items: center;
   flex-direction: column;
 }
 
-.dropdownButton {
+.collapseButton {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,28 +25,28 @@
   }
 }
 
-.dropdownButtonText {
+.collapseButtonText {
   padding-left: 15px;
   font-size: 24px;
   font-weight: bold;
   color: white;
 }
 
-.dropdownContentContainer {
+.collapseContentContainer {
   overflow: hidden;
   width: 100%;
-  & > .dropdownContent {
+  & > .collapseContent {
     background-color: #f6f6f6;
     padding: 20px 15px;
     box-sizing: border-box;
     margin-top: -100%;
     transition: all 0.5s ease;
   }
-  &.slide > .dropdownContent {
+  &.slide > .collapseContent {
     margin-top: 0;
   }
 }
 
-.dropdownContentText {
+.collapseContentText {
   font-size: 20px;
 }

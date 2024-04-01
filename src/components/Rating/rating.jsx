@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
-import starFull from '/src/assets/starfull.svg'
-import starEmpty from '/src/assets/starempty.svg'
+import starFull from '/src/assets/logo/starFull.svg'
+import starEmpty from '/src/assets/logo/starEmpty.svg'
 import './rating.scss'
 
 function Rating({ rating }) {

@@ -1,13 +1,13 @@
 import { useParams } from 'react-router-dom'
 import logements from '../../assets/data/logements'
-import './fiche.scss'
-import Dropdown from '../../components/Dropdown/dropdown'
+import './house.scss'
+import Collapse from '../../components/Collapse/collapse'
 import Tags from '../../components/Tag/tags'
 import Rating from '../../components/Rating/rating'
 import Carousel from '../../components/Carousel/carousel'
 import Error from '../../components/Error/error'
 
-function Fiche() {
+function House() {
   const { id } = useParams()
   const logementList = logements
   const selectedLogement = logementList.find((section) => section.id === id)
@@ -26,36 +26,36 @@ function Fiche() {
   ))
 
   return (
-    <div className="ficheContainer">
+    <div className="houseContainer">
       <Carousel pictures={selectedLogement.pictures} />
-      <div className="ficheContent">
-        <div className="ficheContentTitle">
-          <span className="ficheTitle">{selectedLogement.title} </span>
-          <span className="ficheLocation">{selectedLogement.location}</span>
+      <div className="houseContent">
+        <div className="houseContentTitle">
+          <span className="houseTitle">{selectedLogement.title} </span>
+          <span className="houseLocation">{selectedLogement.location}</span>
         </div>
-        <div className="ficheHostContainer">
-          <span className="ficheHostName">{selectedLogement.host.name}</span>
+        <div className="houseHostContainer">
+          <span className="houseHostName">{selectedLogement.host.name}</span>
           <img
-            className="ficheHostPicture"
+            className="houseHostPicture"
             src={selectedLogement.host.picture}
             alt=""
           />
         </div>
       </div>
-      <div className="ficheContent">
+      <div className="houseContent">
         <div>{tagsList}</div>
-        <div className="ficheRating">
+        <div className="houseRating">
           <Rating rating={selectedLogement.rating} />
         </div>
       </div>
-      <div className="ficheContainerDropdown">
-        <Dropdown
-          className="ficheDropdown"
+      <div className="houseContainerDropdown">
+        <Collapse
+          className="houseDropdown"
           title={'Description'}
           text={selectedLogement.description}
         />
-        <Dropdown
-          className="ficheDropdown"
+        <Collapse
+          className="houseDropdown"
           title={'Equipements'}
           text={equipmentsList}
         />
@@ -64,4 +64,4 @@ function Fiche() {
   )
 }
 
-export default Fiche
+export default House

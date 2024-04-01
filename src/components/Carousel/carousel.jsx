@@ -22,7 +22,7 @@ function Carousel({ pictures }) {
             className="carouselButton carouselButtonLeft"
             onClick={handlePrevClick}
           >
-            <img src="/src/assets/chevron-left.png" alt="" />
+            <img src="../src/assets/logo/chevronLeft.png" alt="" />
           </button>
           <div className="carouselPictures">
             {pictures.map((picture, index) => (
@@ -37,7 +37,7 @@ function Carousel({ pictures }) {
             className="carouselButton carouselButtonRight"
             onClick={handleNextClick}
           >
-            <img src="/src/assets/chevron-left.png" alt="" />
+            <img src="../src/assets/logo/chevronLeft.png" alt="" />
           </button>
           <div className="carouselIndicator">
             <span>

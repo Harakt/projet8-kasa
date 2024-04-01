@@ -4,7 +4,7 @@ import './card.scss'
 function Card({ id, label, picture }) {
   return (
     <li className="cardWrapper">
-      <Link to={`fiche/${id}`}>
+      <Link to={`house/${id}`}>
         <figure className="cardImageContainer">
           <img className="cardImage" src={picture} alt="" />
           <figcaption className="cardLabelContainer">

@@ -13,15 +13,15 @@ function Header() {
   return (
     <nav className="headerContainer">
       <Link to="/">
-        <img src="/src/assets/KasaLogo.svg" alt="" />
+        <img src="../src/assets/logo/kasaLogo.svg" alt="" />
       </Link>
       <div className="headerLinkContainer">
         <Link className={path === '/' ? 'selectedLink' : 'headerLink'} to="/">
           Accueil
         </Link>
         <Link
-          className={path === '/propos' ? 'selectedLink' : 'headerLink'}
-          to="/propos"
+          className={path === '/about' ? 'selectedLink' : 'headerLink'}
+          to="/about"
         >
           A Propos
         </Link>
