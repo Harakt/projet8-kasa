@@ -1,10 +1,6 @@
 .cardWrapper {
   width: 33%;
 
-  @media (max-width: 1024px) {
-    width: 50%;
-  }
-
   @media (max-width: 768px) {
     width: 100%;
   }

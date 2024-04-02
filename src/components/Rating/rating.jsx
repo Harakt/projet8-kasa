@@ -19,7 +19,7 @@ function Rating({ rating }) {
     setStars(newStars)
   }, [])
 
-  return <div className="ratingContainer">{stars}</div>
+  return <div>{stars}</div>
 }
 
 export default Rating
