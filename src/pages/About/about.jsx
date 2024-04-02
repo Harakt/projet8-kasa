@@ -3,13 +3,9 @@ import './about.scss'
 
 function About() {
   return (
-    <div className="proposContainer">
-      <img
-        className="proposCover"
-        src="../src/assets/cover/cover2.png"
-        alt=""
-      />
-      <div className="proposDropdownContainer">
+    <div className="aboutContainer">
+      <img className="aboutCover" src="../src/assets/cover/cover2.png" alt="" />
+      <div className="aboutCollapseContainer">
         <Collapse
           title={'Fiabilité'}
           text={

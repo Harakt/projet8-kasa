@@ -6,11 +6,20 @@
   justify-content: space-evenly;
   background-color: black;
   height: 209px;
+
+  @media (max-width: 768px) {
+    gap: 10px;
+    justify-content: center;
+  }
 }
 
 .footerLabel {
   color: white;
   font-size: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .footerImage {

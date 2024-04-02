@@ -1,3 +1,14 @@
 .ratingStar {
   padding-left: 15px;
+  & > img {
+    height: 24px;
+
+    @media (max-width: 768px) {
+      height: 13px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    padding-left: 8px;
+  }
 }

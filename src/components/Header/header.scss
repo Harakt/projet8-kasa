@@ -1,25 +1,51 @@
 .headerContainer {
-  width: 90%;
   margin: auto;
+  width: 90%;
   padding: 40px 0px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media (max-width: 768px) {
+    padding: 20px 0px;
+  }
+}
+
+.headerLogo {
+  height: 70px;
+  width: 210px;
+
+  @media (max-width: 768px) {
+    height: 47px;
+    width: 145px;
+  }
 }
 
 .headerLinkContainer {
   display: flex;
   gap: 40px;
+
+  @media (max-width: 768px) {
+    gap: 30px;
+  }
 }
 
 .headerLink {
   text-decoration: none;
   color: #000000;
   font-size: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 }
 
 .selectedLink {
   text-decoration: underline;
   color: #000000;
   font-size: 24px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 }

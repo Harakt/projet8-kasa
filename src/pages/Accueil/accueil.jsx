@@ -6,7 +6,7 @@ function Accueil() {
   const logementList = logements
 
   return (
-    <div className="accueilContainer">
+    <div>
       <div className="accueilCoverContainer">
         <img
           className="accueilCoverImage"

@@ -5,29 +5,73 @@
   flex-direction: column;
 }
 
-.houseContent {
-  margin-top: 25px;
+.houseContentContainer {
+  margin: 25px 0px 15px 0px;
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    margin: 15px 0px 0px 0px;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+  }
 }
 
-.houseContentTitle {
+.houseTitleContainer {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
+}
+
+.houseTitleContent {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .houseTitle {
   font-size: 36px;
   color: #ff6060;
+
+  @media (max-width: 768px) {
+    font-size: 18px;
+  }
 }
 
 .houseLocation {
   font-size: 18px;
   color: black;
-  font-weight: bold;
+
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
 }
 
-.houseHostContainer {
+.houseTagsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.houseHostRatingContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.houseHostContent {
   display: flex;
   align-items: center;
   gap: 10px;
@@ -36,24 +80,34 @@
 .houseHostName {
   font-size: 18px;
   color: #ff6060;
+
+  @media (max-width: 768px) {
+    font-size: 12px;
+  }
 }
 
 .houseHostPicture {
   height: 64px;
   width: 64px;
   border-radius: 100%;
+
+  @media (max-width: 768px) {
+    height: 32px;
+    width: 32px;
+  }
 }
 
-.houseRating {
-  font-size: 24px;
-  color: #ff6060;
-}
-
-.houseContainerDropdown {
+.houseCollapseContainer {
   margin: 15px 0px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   grid-column-gap: 50px;
   grid-row-gap: 0px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
 }

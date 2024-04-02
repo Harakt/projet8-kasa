@@ -23,13 +23,21 @@
   &.rotate > img {
     transform: rotate(-180deg);
   }
+
+  @media (max-width: 768px) {
+    height: 30px;
+  }
 }
 
 .collapseButtonText {
-  padding-left: 15px;
+  padding-left: 10px;
   font-size: 24px;
   font-weight: bold;
   color: white;
+
+  @media (max-width: 768px) {
+    font-size: 13px;
+  }
 }
 
 .collapseContentContainer {
@@ -49,4 +57,8 @@
 
 .collapseContentText {
   font-size: 20px;
+
+  @media (max-width: 768px) {
+    font-size: 15px;
+  }
 }
