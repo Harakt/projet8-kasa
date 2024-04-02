@@ -24,7 +24,7 @@
     transform: rotate(-180deg);
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
     height: 30px;
   }
 }
@@ -35,7 +35,7 @@
   font-weight: bold;
   color: white;
 
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
     font-size: 13px;
   }
 }
@@ -58,7 +58,7 @@
 .collapseContentText {
   font-size: 20px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
     font-size: 15px;
   }
 }
