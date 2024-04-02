@@ -7,7 +7,7 @@
   height: 415px;
   object-fit: cover;
 
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
     height: 255px;
   }
 }
@@ -25,7 +25,7 @@
   padding: 0;
   cursor: pointer;
 
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
     height: 20px;
     width: 12px;
   }
@@ -43,7 +43,7 @@
     height: 79px;
     width: 46px;
 
-    @media (max-width: 768px) {
+    @media (max-width: 425px) {
       height: 20px;
       width: 12px;
     }
@@ -57,7 +57,7 @@
   color: white;
   font-size: 18px;
 
-  @media (max-width: 768px) {
+  @media (max-width: 425px) {
     font-size: 10px;
   }
 }
