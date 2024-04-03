@@ -1,5 +1,5 @@
 import Card from '../../components/Card/card'
-import logements from '../../assets/data/logements'
+import logements from '../../assets/data/logements.json'
 import './accueil.scss'
 
 function Accueil() {

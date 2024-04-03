@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import logements from '../../assets/data/logements'
+import logements from '../../assets/data/logements.json'
 import './house.scss'
 import Collapse from '../../components/Collapse/collapse'
 import Tags from '../../components/Tag/tags'
